@@ -13,11 +13,11 @@
   },
   "commands": {
     "toggle-recording": {
-      "suggested_key": { "default": "Ctrl+Shift+S" },
+      "suggested_key": { "default": "Ctrl+Shift+Y" },
       "description": "Toggle tab audio recording"
     },
     "toggle-stop": {
-      "suggested_key": { "default": "Ctrl+Shift+X" },
+      "suggested_key": { "default": "Ctrl+Shift+U" },
       "description": "Toggle tab audio recording"
     }
   },
