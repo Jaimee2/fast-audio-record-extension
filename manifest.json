@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Audio Recorder (using recorder page)",
+  "version": "1.0",
+  "description": "Records audio from the active tab using a dedicated recorder page, toggled by Ctrl+Shift+Y",
+  "permissions": [
+    "tabCapture",
+    "storage",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-recording": {
+      "suggested_key": { "default": "Ctrl+Shift+S" },
+      "description": "Toggle tab audio recording"
+    },
+    "toggle-stop": {
+      "suggested_key": { "default": "Ctrl+Shift+X" },
+      "description": "Toggle tab audio recording"
+    }
+  },
+  "web_accessible_resources": [{
+    "resources": ["recorder.html", "recorder.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "action": {
+    "default_title": "Tab Audio Recorder"
+  }
+}
