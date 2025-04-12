@@ -22,7 +22,11 @@
     }
   },
   "web_accessible_resources": [{
-    "resources": ["recorder.html", "recorder.js"],
+    "resources": [
+      "recorder.html",
+      "recorder.js",
+      "lamejs.min.js"
+    ],
     "matches": ["<all_urls>"]
   }],
   "action": {
